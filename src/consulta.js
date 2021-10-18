@@ -57,6 +57,6 @@ db.juegos.find({ precio: {$gt: 20, $lt: 10}}).pretty()
 //todos los juegos creados a partir del "2018-3-26" y su modo sea "multijugador" 
 db.juegos.find( {$and: [ {fechaLanzamiento: {$gte: new Date("2018-3-26")}}, {modo:"multijugador"}]} )
 
-//Solo juegos con genero aventura y desarrolladores "Ubisoft Milan".
+//Solo juegos con genero aventura.
 db.juegos.find({genero: "aventura"}).pretty()
 
